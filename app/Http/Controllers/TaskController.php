@@ -33,4 +33,21 @@ class TaskController extends Controller
     public function edit(Task $task) {
         return view('tasks.edit', compact('task'));
     }
+
+    public function update(Request $req, Task $task) {
+        $task->task_name = $req->input('task_name');
+        $task->year = $req->input('year');
+        $task->month = $req->input('month');
+        $task->day = $req->input('day');
+        $task->memo = $req->input('memo');
+        $task->done = $req->input('done');
+        $task->save();
+
+        return redirect()->route('tasks.show', $task);
+    }
+
+    public function destroy(Task $task) {
+        $task->delete();
+        return redirect()->route('tasks.index');
+    }
 }
