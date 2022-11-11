@@ -21,3 +21,4 @@ Route::get('/', function () {
 Route::resource("/tasks", TaskController::class);
 Route::get('/top', [HomeController::class, 'top']);
 Route::get('/about', [HomeController::class, 'about']);
+Route::get('/contact', [HomeController::class, 'contact']);
