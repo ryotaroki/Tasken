@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TaskController extends Controller
+class HomeController extends Controller
 {
-    function index() {
-        return view('tasks.index');
-    }
     function top() {
         return view('top');
+    }
+
+    function about() {
+        return view('about');
     }
 }

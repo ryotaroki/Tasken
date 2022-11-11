@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::resource("/tasks", TaskController::class);
+Route::get('/top', [HomeController::class, 'top']);
+Route::get('/about', [HomeController::class, 'about']);
