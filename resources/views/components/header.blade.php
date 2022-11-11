@@ -7,7 +7,7 @@
             <li class="nav-list" style="font-weight:bold;">TOP</li>
             <li class="nav-list" style="font-weight:bold;">ABOUT</li>
             <li class="nav-list" style="font-weight:bold;">CONTACT</li>
-            <li class="nav-list" style="font-weight:bold;"><a href="tasks">TASKS</a></li>
+            <li class="nav-list" style="font-weight:bold;"><a href="{{ route('tasks.index')}}">TASKS</a></li>
         </ul>
     </nav>
 @endsection

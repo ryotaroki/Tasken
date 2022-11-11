@@ -11,7 +11,7 @@
         </tr>
         @foreach ($tasks as $task)
         <tr>
-            <td>{{ $task->task_name }}</td>
+            <td><a href="{{ route('tasks.show', $task)}}">{{$task->task_name}}</a></td>
             <td>{{ $task->done == 1 ? '未達成' : '達成!' }}</td>
             <td>{{ $task->created_at }}</td>
             <td>{{ $task->year }}年{{ $task->month }}月{{ $task->day }}日　</td>
