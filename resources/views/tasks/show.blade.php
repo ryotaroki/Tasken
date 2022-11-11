@@ -20,7 +20,11 @@
             <td>{{ $task->memo }}</td>
             <td>
                 <a href="{{ route('tasks.edit', $task)}}" class="btn btn-info">編集</a>
-                <button class="btn btn-danger">削除</button>
+                <form action="{{$task->id}}" method="POST" style="display:inline;">
+                  @method("DELETE")
+                  @csrf
+                  <button type="submit" class="btn btn-danger" onclick="return confirm('本当に削除しますか？')">削除</button>
+                </form>
             </td>
         </tr>
     </table>
