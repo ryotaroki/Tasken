@@ -6,8 +6,8 @@
         <ul class="nav navber-nav d-flex flex-row jutify-content-center" style="justify-content: space-around;">
             <li class="nav-list" style="font-weight:bold;">TOP</li>
             <li class="nav-list" style="font-weight:bold;">ABOUT</li>
-            <li class="nav-list" style="font-weight:bold;">CONTACT</li>
-            <li class="nav-list" style="font-weight:bold;"><a href="{{ route('tasks.index')}}">TASKS</a></li>
+            <li class="nav-list" style="font-weight:bold;"><a href="{{ route('tasks.create')}}">New Task</a></li>
+            <li class="nav-list" style="font-weight:bold;"><a href="{{ route('tasks.index')}}">Confirm TASKS</a></li>
         </ul>
     </nav>
 @endsection

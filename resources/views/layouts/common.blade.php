@@ -11,5 +11,7 @@
     @yield('header')
     @yield('main')
     @yield('footer')
+    <script src="{{asset('js/jquery-3.6.1.min.js')}}"></script>
+    <script src="{{asset('js/common.js')}}"></script>
 </body>
 </html>

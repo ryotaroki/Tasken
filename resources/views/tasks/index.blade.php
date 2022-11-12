@@ -1,5 +1,6 @@
 @extends('layouts.layouts')
 @section('main')
+    <button class="btn btn-info"><a href="{{ route('tasks.create')}}"></a>新規登録</button>
     <table class="table">
         <tr>
             <th>やること</th>

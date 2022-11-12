@@ -5,7 +5,6 @@
     <div>
         <form action="/tasks" method="POST">
         @csrf
-        @method(PATCH)
             <div class="form-group">
                 <label>タスク名</label>
                 <input type="text" name="task_name" class="form-control">
