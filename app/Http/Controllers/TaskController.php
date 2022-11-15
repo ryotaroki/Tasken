@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Task;
+use App\Http\Requests\TaskRequest;
 class TaskController extends Controller
 {
     function index() {
@@ -18,7 +19,7 @@ class TaskController extends Controller
         return view('tasks.create');
     }
 
-    public function store(Request $req) {
+    public function store(TaskRequest $req) {
         $task = new Task();
         $task->task_name = $req->input('task_name');
         $task->year = $req->input('year');
